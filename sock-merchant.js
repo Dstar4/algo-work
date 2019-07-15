@@ -1,30 +1,6 @@
 'use strict';
 
 // Complete the sockMerchant function below.
-// function sockMerchant(n, ar) {
-//     // console.log(n)
-//     // console.log(ar)
-//     const pairs = {}
-//     let output = 0
-//     for (let i = 0; i < n; i++) {
-//         if (pairs[ ar[ i ] ]) {
-//             pairs[ ar[ i ] ] += 1
-//         } else {
-//             pairs[ ar[ i ] ] = 1
-//         }
-//         // console.log(pairs[ ar[ i ] ])
-//         if (pairs[ ar[ i ] ]) {
-//             output++
-//             // console.log(ar[ i ])
-//         }
-
-//         // console.log(pairs[ ar[ i ] ])
-
-//     }
-//     console.log(pairs)
-//     console.log(output)
-//     return output
-// }
 // Hash Solution BETTER
 function sockMerchant(n, arr) {
     let pairs = 0;
@@ -43,10 +19,6 @@ function sockMerchant(n, arr) {
 
     return pairs;
 }
-
-console.log(sockMerchant(9, [ 10, 20, 20, 10, 10, 30, 50, 10, 20 ]))
-
-
 
 // // Solution
 // function sockMerchant(n, arr) {
@@ -67,4 +39,8 @@ console.log(sockMerchant(9, [ 10, 20, 20, 10, 10, 30, 50, 10, 20 ]))
 
 
 // console.log(sockMerchant(9, [ 10, 20, 20, 10, 10, 30, 50, 10, 20 ]))
+
+
+console.log(sockMerchant(9, [ 10, 20, 20, 10, 10, 30, 50, 10, 20 ]))
+
 
