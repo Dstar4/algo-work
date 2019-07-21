@@ -1,12 +1,12 @@
 /* CLASS */
-var LinkedList = function (value) {
+let LinkedList = function (value) {
     this.value = value;
     this.next = null;
 };
 
 /* FUNCTIONS */
-var checkDups = function (head, node) {
-    var currNode = head;
+let checkDups = function (head, node) {
+    let currNode = head;
     while (currNode !== node) {
         if (currNode.value === node.value) {
             return true;
@@ -16,8 +16,8 @@ var checkDups = function (head, node) {
     return false;
 };
 
-var printLinkedList = function (head) {
-    var node = head;
+let printLinkedList = function (head) {
+    let node = head;
     console.log('start of linked list');
     while (node !== null) {
         console.log(node.value);
@@ -26,8 +26,8 @@ var printLinkedList = function (head) {
     console.log('end of linked list');
 };
 
-var removeDups = function (head) {
-    var node = head;
+let removeDups = function (head) {
+    let node = head;
     while (node !== null) {
         if (node.next !== null && checkDups(head, node.next)) {
             node.next = node.next.next;
@@ -39,11 +39,11 @@ var removeDups = function (head) {
 };
 
 /* TESTS */
-var a = new LinkedList('a');
-var b = new LinkedList('b');
-var c = new LinkedList('c');
-var d = new LinkedList('d');
-var e = new LinkedList('e');
+let a = new LinkedList('a');
+let b = new LinkedList('b');
+let c = new LinkedList('c');
+let d = new LinkedList('d');
+let e = new LinkedList('e');
 
 a.next = b;
 b.next = c;
@@ -53,11 +53,11 @@ d.next = e;
 removeDups(a);
 printLinkedList(a);
 
-var f = new LinkedList('f');
-var g = new LinkedList('g');
-var h = new LinkedList('g');
-var i = new LinkedList('g');
-var j = new LinkedList('g');
+let f = new LinkedList('f');
+let g = new LinkedList('g');
+let h = new LinkedList('g');
+let i = new LinkedList('g');
+let j = new LinkedList('g');
 
 f.next = g;
 g.next = h;
@@ -67,11 +67,11 @@ i.next = j;
 removeDups(f);
 printLinkedList(f);
 
-var k = new LinkedList('g');
-var l = new LinkedList('g');
-var m = new LinkedList('g');
-var n = new LinkedList('b');
-var o = new LinkedList('g');
+let k = new LinkedList('g');
+let l = new LinkedList('g');
+let m = new LinkedList('g');
+let n = new LinkedList('b');
+let o = new LinkedList('g');
 
 k.next = l;
 l.next = m;
